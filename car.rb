@@ -5,11 +5,10 @@ class Car
   MAX_PASSENGERS = 4
 
   @@count = 0
-  attr_accessor :number, :color
+  attr_accessor :number, :color, :passengers
   # speedは外部から設定しないのでreaderで定義
   # @speedが使えるようになる
   attr_reader :speed
-  attr_accessor :passengers
 
   def initialize(number, color)
     @number = number
